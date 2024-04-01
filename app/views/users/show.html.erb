@@ -9,6 +9,7 @@
     <div class='col-md-8 offset-md-1'>
       <h2>Books</h2>
       <%= render 'books/index',books: @books %>
+      <td><%= render "relationships/btn", user: @user, options: { class: "follow-link" } %></td>
     </div>
   </div>
 </div>
