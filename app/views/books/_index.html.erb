@@ -34,8 +34,8 @@
         <td>
           コメント数： <%= book.Book_comments.count %>
         </td>
-        
-      </tr>
+          <td><%= render "relationships/btn", user: book.user, options: { class: "follow-link" } %></td>
+        </tr>
     <% end %>
   </tbody>
 </table>
