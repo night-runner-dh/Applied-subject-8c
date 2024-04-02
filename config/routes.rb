@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "home/about"=>"homes#about"
   root :to =>"homes#top"
  
+  get "search" => "searches#search"
 
 
 
