@@ -22,11 +22,11 @@
         </td>
       
         </td>
-        <td>
-          コメント数： <%= book.Book_comments.count %>
-        </td>
-          <td><%= render "relationships/btn", user: book.user, options: { class: "follow-link" } %></td>
+         <td>
+           <%= render "book_comments/count", book: book %>
+          </td>
+            <td><%= render "relationships/btn", user: book.user, options: { class: "follow-link" } %></td>
         </tr>
-    <% end %>
+     <% end %>
   </tbody>
 </table>
