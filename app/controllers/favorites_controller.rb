@@ -5,7 +5,7 @@ class FavoritesController < ApplicationController
   favorite = current_user.favorites.new(book_id: book.id)
   favorite.save
  @book = book
- @books =   Book.all
+ @books = Book.all
  end
 
  def destroy
