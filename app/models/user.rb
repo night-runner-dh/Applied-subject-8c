@@ -17,6 +17,8 @@ class User < ApplicationRecord
   # フォロワーを取得
   has_many :followers, through: :passive_relationships, source: :follower
   
+  #必要ないかも？
+  has_many :group_users, dependent: :destroy
 
 
   has_one_attached :profile_image
